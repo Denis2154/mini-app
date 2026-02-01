@@ -1,23 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
     <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
     <title>Манікюр Кам'янське</title>
 </head>
+
 <body>
     <div class="container">
-    <section>
-        Галерея
-    </section>
-    <button>
-        Записатися
-    </button>
-    <a href="#"></a>
-    <a href="#"></a>
+        <header class="header">
+            <div class="header-content">
+                <div class="header-top">
+                    <img class="header-img" src="./images/logo.png" />
+                    <h1>Майстер манікюру</h1>
+                </div>
+                <p class="subtitle">Професійний догляд за нігтями</p>
+            </div>
+                <button class="header-button" id="openModal">Записатися</button>
+                <div class="modal" id="modal">
+                    <div class="modal-content">
+                        <span class="close" id="closeModal">&times;</span>
+                        <h2>Оберіть спосіб зв'язку</h2>
+
+                        <button class="modal-btn" onclick="openInstagram()">
+                          <img src="./images/instagram.svg"/>
+                          <p>@aleksandrova.nails</p>
+                        </button>
+
+                        <button class="modal-btn" onclick="openViber()">
+                         <img src="./images/viber.png"/>
+                         <p>+38 (063) 648-75-22</p>
+                        </button>
+                    </div>
+                </div>
+        </header>
+
+        <main class="main-content">
+            <section class="gallery">
+                <h2>Мої роботи</h2>
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="./images/photo1.jpg" alt="Маникюр 1"/>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="./images/photo2.jpg" alt="Маникюр 2"/>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="./images/photo3.jpg" alt="Маникюр 3"/>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="./images/photo4.jpg" alt="Маникюр 4"/>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="./images/photo5.jpg" alt="Маникюр 5"/>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="./images/photo6.jpg" alt="Маникюр 6"/>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="./images/photo7.jpg" alt="Маникюр 7"/>
+                    </div>
+
+                    <div class="gallery-item">
+                        <img src="./images/photo8.jpg" alt="Маникюр 8"/>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="./images/photo9.jpg" alt="Маникюр 9"/>
+                    </div>  
+                    <div class="gallery-item">
+                        <img src="./images/photo10.jpg" alt="Маникюр 10"/>
+                    </div>               
+                </div>
+            </section>
+
+            <section class="contact-section">
+                <h2>Контакти</h2>
+                <div class="contact-info">
+                    <div class="viber-instagram">
+                    <div class="contact-item">
+                        <img src="./images/viber.png" class="contact-icon-vaber"/>
+                        <a href="viber://chat?number=%2B380636487522" class="btn">+38 (063) 648-75-22</a>
+                    </div>
+                    <div class="contact-item">
+                        <img src="./images/instagram.svg" class="contact-icon-instagram"/>
+                        <a href="https://www.instagram.com/aleksandrova.nails/?utm_source=qr&igsh=ZWIyZnVkOXd4ZHls#" target="_blank">@aleksandrova.nails</a>
+                    </div>
+                    </div>
+                    
+                    <div class="time-adress">
+                    <div class="contact-item">
+                        <img src="./images/clock.png" class="contact-icon-clock"/>
+                        <span>Пн-Сб: 10:00 - 19:00</span>
+                    </div>
+                    <div class="contact-item">
+                        <img src="./images/address.png" class="contact-icon-address"/>
+                        <span>м. Кам'янське, Правий берег</span>
+                    </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
     </div>
     <script src="script.js"></script>
 </body>
+
 </html>
