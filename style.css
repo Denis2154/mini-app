@@ -216,4 +216,8 @@ body {
         display: flex;
         flex-direction: column;
     }
+    .contact-info {
+        display: flex;
+        flex-direction: column;
+    }
 }
