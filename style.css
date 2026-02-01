@@ -207,15 +207,6 @@ body {
 }
 
 @media (max-width: 480px) {
-    .time-adress {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .viber-instagram {
-        display: flex;
-        flex-direction: column;
-    }
     .contact-info {
         display: flex;
         flex-direction: column;
