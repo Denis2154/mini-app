@@ -25,5 +25,5 @@ function openInstagram() {
 }
 
 function openViber() {
-    window.location.href = "viber://chat?number=%2B380636487522";
+    tg.openLink("https://invite.viber.com?number=380636487522");
 }
