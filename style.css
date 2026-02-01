@@ -127,7 +127,7 @@ body {
 }
 
 .contact-item a {
-text-decoration: none;
+    text-decoration: none;
 }
 
 .contact-section h2 {
@@ -140,8 +140,8 @@ text-decoration: none;
 }
 
 .contact-info {
-   display: flex;
-   justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
 }
 
 .contact-icon-address {
@@ -195,6 +195,25 @@ text-decoration: none;
 }
 
 @keyframes fadeIn {
-    from {transform: translateY(20px); opacity: 0;}
-    to {transform: translateY(0); opacity: 1;}
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@media (max-width: 480px) {
+    .time-adress {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .viber-instagram {
+        display: flex;
+        flex-direction: column;
+    }
 }
